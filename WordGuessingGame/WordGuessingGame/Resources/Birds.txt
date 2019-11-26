@@ -1,0 +1,22 @@
+Crow
+Peacock
+Dove
+Sparrow
+Goose
+Ostrich
+Pigeon
+Turkey
+Hawk
+Bald eagle
+Raven
+Parrot
+Flamingo
+Seagull
+Swallow
+Blackbird
+Penguin
+Robin
+Swan
+Owl
+Stork
+Woodpecker
