@@ -39,7 +39,7 @@ namespace WordGuessingGame
             }
             InsertRec(root, new Node(data));
         }
-        private void InsertRec(Node root, Node newNode)
+        public void InsertRec(Node root, Node newNode)
         {
             if (root == null)
                 root = newNode;
@@ -60,9 +60,22 @@ namespace WordGuessingGame
                     InsertRec(root.Right, newNode);
             }
         }
-        private int getTreeValue(int index)
+        public string getTreeword(int index)
         {
-            return 0;
+            string word="";
+            Node tp = this.root;
+            while((tp.Right != null|| tp.Right != null) &&index>0)
+            {
+                if (tp.Data.Length % 2 == 0)
+                    tp = tp.Right;
+                if (tp.Data.Length % 2 == 1)
+                    tp = tp.Left;
+
+                index--;
+            }
+
+            return word=tp.Data;
+
         }
     }
 }
