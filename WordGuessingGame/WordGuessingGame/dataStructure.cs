@@ -64,17 +64,28 @@ namespace WordGuessingGame
         {
             string word="";
             Node tp = this.root;
-            while((tp.Right != null|| tp.Right != null) &&index>0)
+            while(tp !=null&&index>=0)
             {
-                if (tp.Data.Length % 2 == 0)
-                    tp = tp.Right;
-                if (tp.Data.Length % 2 == 1)
-                    tp = tp.Left;
-
-                index--;
+                if (tp.Right == null|| tp.Left == null)
+                {
+                    break;
+                }
+                else
+                {
+                    if (tp.Data.Length % 2 == 0)
+                    {
+                        tp = tp.Right;
+                    }
+                    else if (tp.Data.Length % 2 == 1)
+                    {
+                        tp = tp.Left;
+                    }
+                    index--;
+                    word = tp.Data;
+                }
             }
 
-            return word=tp.Data;
+            return word;
 
         }
     }

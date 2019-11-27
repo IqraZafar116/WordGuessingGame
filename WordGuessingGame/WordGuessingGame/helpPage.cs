@@ -16,5 +16,20 @@ namespace WordGuessingGame
         {
             InitializeComponent();
         }
+
+        private void helpPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

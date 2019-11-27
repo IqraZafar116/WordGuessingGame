@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WordGuessingGame
 {
-    public partial class Form1 : Form
+    public partial class HomePage : Form
     {
         BinaryTree FruitsTree = new BinaryTree();
         BinaryTree VegetableTree = new BinaryTree();
@@ -20,7 +20,7 @@ namespace WordGuessingGame
         BinaryTree elementsTree = new BinaryTree();
         string randword = "";
         string dashdoword = "";
-        public Form1()
+        public HomePage()
         {
             InitializeComponent();
         }
@@ -57,18 +57,22 @@ namespace WordGuessingGame
             loadDic(animalTree, "Birds.txt");
             loadDic(birdTree, "Animals.txt");
             loadDic(elementsTree, "elements.txt");
-            int randTreeValue = randomNumber(0, 4);
-            int randWordValue = randomNumber(0, 10);
-            if (randTreeValue ==1 )
-                randword = FruitsTree.getTreeword(randWordValue);
-            else if (randTreeValue == 2)
-                randword = VegetableTree.getTreeword(randWordValue);
-            else if (randTreeValue == 3)
-                randword = animalTree.getTreeword(randWordValue);
-            else if (randTreeValue == 4)
-                randword = birdTree.getTreeword(randWordValue);
-            else
-                randword = elementsTree.getTreeword(randWordValue);
+            while(randword=="")
+            {
+                int randTreeValue = randomNumber(0, 4);
+                int randWordValue = randomNumber(0, 10);
+                if (randTreeValue == 1)
+                    randword = FruitsTree.getTreeword(randWordValue);
+                else if (randTreeValue == 2)
+                    randword = VegetableTree.getTreeword(randWordValue);
+                else if (randTreeValue == 3)
+                    randword = animalTree.getTreeword(randWordValue);
+                else if (randTreeValue == 4)
+                    randword = birdTree.getTreeword(randWordValue);
+                else
+                    randword = elementsTree.getTreeword(randWordValue);
+            }
+            
            dashdoword = produceDashes(randword);
 
         }
@@ -84,6 +88,11 @@ namespace WordGuessingGame
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
