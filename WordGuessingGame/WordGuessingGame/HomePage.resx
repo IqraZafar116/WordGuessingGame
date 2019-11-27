@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>1. You have to complete a word by guessing alphabetic letters.                                                             2.  With every right guess, the system will put  that alphabet on its correct place in the word.                                                                 3. Every wrong guess will lead your man to death.                                                                        4. If you guess all the alphabets before 6 chances you will Win!                                             5.If you will not be able to guess word in 6 chances you will lose game.</value>
-  </data>
 </root>
