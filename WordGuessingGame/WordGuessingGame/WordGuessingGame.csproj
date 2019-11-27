@@ -53,10 +53,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="helpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpPage.Designer.cs">
+      <DependentUpon>helpPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpPage.resx">
+      <DependentUpon>helpPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Vegetables.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hangman.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q mark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
