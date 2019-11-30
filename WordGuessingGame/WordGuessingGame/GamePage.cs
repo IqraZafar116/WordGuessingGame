@@ -16,5 +16,10 @@ namespace WordGuessingGame
         {
             InitializeComponent();
         }
+
+        private void GamePage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
