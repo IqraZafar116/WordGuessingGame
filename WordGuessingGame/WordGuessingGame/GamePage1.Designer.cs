@@ -345,10 +345,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WordGuessingGame.Properties.Resources.hangman;
-            this.pictureBox1.Location = new System.Drawing.Point(113, 100);
+            this.pictureBox1.Image = global::WordGuessingGame.Properties.Resources.WhatsApp_Image_2019_11_30_at_7_39_24_PM;
+            this.pictureBox1.Location = new System.Drawing.Point(133, 94);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(207, 142);
+            this.pictureBox1.Size = new System.Drawing.Size(166, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
