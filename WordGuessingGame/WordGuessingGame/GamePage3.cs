@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WordGuessingGame
 {
-    public partial class GamePage : Form
+    public partial class GamePage3 : Form
     {
-        public GamePage()
+        public GamePage3()
         {
             InitializeComponent();
-        }
-
-        private void GamePage_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

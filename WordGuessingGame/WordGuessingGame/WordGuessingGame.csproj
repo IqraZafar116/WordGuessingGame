@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +66,18 @@
     <Compile Include="GamePage2.Designer.cs">
       <DependentUpon>GamePage2.cs</DependentUpon>
     </Compile>
+    <Compile Include="GamePage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamePage3.Designer.cs">
+      <DependentUpon>GamePage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GamePage4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamePage4.Designer.cs">
+      <DependentUpon>GamePage4.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +100,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GamePage2.resx">
       <DependentUpon>GamePage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamePage3.resx">
+      <DependentUpon>GamePage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamePage4.resx">
+      <DependentUpon>GamePage4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -158,6 +177,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\11-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-11-30 at 7.39.39 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-11-30 at 7.39.38 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-11-30 at 7.39.24 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-11-30 at 7.39.43 PM.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
