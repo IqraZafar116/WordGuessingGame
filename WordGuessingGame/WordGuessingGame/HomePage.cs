@@ -45,7 +45,7 @@ namespace WordGuessingGame
             string temp= "";
             foreach(char x in word)
             {
-                temp = temp + " _";
+                temp = temp + "_";
             }
             return temp;
 
@@ -57,23 +57,7 @@ namespace WordGuessingGame
             loadDic(animalTree, "Birds.txt");
             loadDic(birdTree, "Animals.txt");
             loadDic(elementsTree, "elements.txt");
-            while(randword=="")
-            {
-                int randTreeValue = randomNumber(0, 4);
-                int randWordValue = randomNumber(0, 10);
-                if (randTreeValue == 1)
-                    randword = FruitsTree.getTreeword(randWordValue);
-                else if (randTreeValue == 2)
-                    randword = VegetableTree.getTreeword(randWordValue);
-                else if (randTreeValue == 3)
-                    randword = animalTree.getTreeword(randWordValue);
-                else if (randTreeValue == 4)
-                    randword = birdTree.getTreeword(randWordValue);
-                else
-                    randword = elementsTree.getTreeword(randWordValue);
-            }
             
-           dashdoword = produceDashes(randword);
 
         }
 
@@ -94,7 +78,25 @@ namespace WordGuessingGame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GamePage gamepage = new GamePage();
+            reRand:
+            int randTreeValue = randomNumber(0, 4);
+            int randWordValue = randomNumber(0, 10);
+            if (randTreeValue == 1)
+                randword = FruitsTree.getTreeword(randWordValue);
+            else if (randTreeValue == 2)
+                randword = VegetableTree.getTreeword(randWordValue);
+            else if (randTreeValue == 3)
+                randword = animalTree.getTreeword(randWordValue);
+            else if (randTreeValue == 4)
+                randword = birdTree.getTreeword(randWordValue);
+            else
+                randword = elementsTree.getTreeword(randWordValue);
+            if (randword == "")
+                goto reRand;
+            randword = randword.ToUpper();
+            dashdoword = produceDashes(randword);
+            MessageBox.Show(dashdoword);
+            GamePage gamepage = new GamePage(dashdoword,randword);
             gamepage.Show();
         }
 
