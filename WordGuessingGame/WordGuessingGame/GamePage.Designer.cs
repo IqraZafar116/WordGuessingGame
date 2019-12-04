@@ -56,6 +56,7 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::WordGuessingGame.Properties.Resources._11_01;
             this.pictureBox1.Image = global::WordGuessingGame.Properties.Resources._11_01;
-            this.pictureBox1.Location = new System.Drawing.Point(82, 53);
+            this.pictureBox1.Location = new System.Drawing.Point(82, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(273, 225);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -298,7 +299,7 @@
             // button22
             // 
             this.button22.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(201, 435);
+            this.button22.Location = new System.Drawing.Point(202, 435);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(30, 30);
             this.button22.TabIndex = 29;
@@ -308,7 +309,7 @@
             // button23
             // 
             this.button23.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(168, 435);
+            this.button23.Location = new System.Drawing.Point(171, 435);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(30, 30);
             this.button23.TabIndex = 30;
@@ -318,7 +319,7 @@
             // button24
             // 
             this.button24.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(136, 435);
+            this.button24.Location = new System.Drawing.Point(140, 435);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(30, 30);
             this.button24.TabIndex = 31;
@@ -345,12 +346,23 @@
             this.button26.Text = "t";
             this.button26.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(102, 283);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(235, 13);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "_____ _____ _____ _____ _____ _____ _____";
+            // 
             // GamePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(437, 505);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button24);
@@ -383,6 +395,7 @@
             this.Text = "GamePage";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -416,5 +429,6 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Label label1;
     }
 }

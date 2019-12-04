@@ -56,6 +56,7 @@
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.richTextBox1.Location = new System.Drawing.Point(44, 87);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(399, 347);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
@@ -85,6 +86,7 @@
             this.button2.TabIndex = 5;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // helpPage
             // 

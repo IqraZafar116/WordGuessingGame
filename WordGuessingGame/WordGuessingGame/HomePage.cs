@@ -94,7 +94,19 @@ namespace WordGuessingGame
 
         private void button1_Click(object sender, EventArgs e)
         {
+            GamePage gamepage = new GamePage();
+            gamepage.Show();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            helpPage helppage = new helpPage();
+            helppage.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
