@@ -65,7 +65,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WordGuessingGame.Properties.Resources.q_mark;
-            this.pictureBox1.Location = new System.Drawing.Point(158, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(160, 36);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(22, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,7 +80,7 @@
             this.button2.Font = new System.Drawing.Font("Lucida Handwriting", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.Location = new System.Drawing.Point(216, 410);
+            this.button2.Location = new System.Drawing.Point(209, 410);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(60, 60);
             this.button2.TabIndex = 5;
