@@ -11,6 +11,8 @@ namespace WordGuessingGame
         public string Data { get; set; }
         public Node Left { get; set; }
         public Node Right { get; set; }
+        public int child { get; set; }
+
         public Node()
         {
 
@@ -25,7 +27,53 @@ namespace WordGuessingGame
 
     public class BinaryTree
     {
-        private Node root;
+        public Node root;
+        //test 
+        int getElements(Node root)
+        {
+            if (root==null)
+                return 0;
+            return getElements(root.Left) +
+                  getElements(root.Right) + 1;
+        }
+        public void insertChildrenCount(Node root)
+        {
+            if (root == null)
+                return;
+            root.child = getElements(root) - 1;
+            insertChildrenCount(root.Left);
+            insertChildrenCount(root.Right);
+        }
+
+        int children(Node root)
+        {
+            if (root == null)
+                return 0;
+            return root.child + 1;
+        }
+        string randomNodeUtil(Node root, int count)
+        {
+            if (root==null)
+                return "";
+
+            if (count == children(root.Left))
+                return root.Data;
+
+            if (count < children(root.Left))
+                return randomNodeUtil(root.Left, count);
+
+            return randomNodeUtil(root.Right,
+                      count - children(root.Left) - 1);
+        }
+        // Returns Random node 
+        public string randomNode(Node root)
+        {
+            //srand(time(0));
+            Random rand = new Random();
+            int count = rand.Next() % (root.child + 1);
+            return randomNodeUtil(root, count);
+        }
+        //^^^^^^^^^^^^^^^^^^^^^test
         public BinaryTree()
         {
             root = null;

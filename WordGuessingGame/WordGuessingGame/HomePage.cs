@@ -78,24 +78,27 @@ namespace WordGuessingGame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            reRand:
+            FruitsTree.insertChildrenCount(FruitsTree.root);
+            VegetableTree.insertChildrenCount(VegetableTree.root);
+            birdTree.insertChildrenCount(birdTree.root);
+            elementsTree.insertChildrenCount(elementsTree.root);
+            animalTree.insertChildrenCount(animalTree.root);
             int randTreeValue = randomNumber(0, 4);
-            int randWordValue = randomNumber(0, 10);
             if (randTreeValue == 1)
-                randword = FruitsTree.getTreeword(randWordValue);
+                randword = FruitsTree.randomNode(FruitsTree.root);
             else if (randTreeValue == 2)
-                randword = VegetableTree.getTreeword(randWordValue);
+                randword = VegetableTree.randomNode(VegetableTree.root);
             else if (randTreeValue == 3)
-                randword = animalTree.getTreeword(randWordValue);
+                randword = birdTree.randomNode(birdTree.root);
             else if (randTreeValue == 4)
-                randword = birdTree.getTreeword(randWordValue);
+                randword = elementsTree.randomNode(elementsTree.root);
             else
-                randword = elementsTree.getTreeword(randWordValue);
-            if (randword == "")
-                goto reRand;
+                randword = animalTree.randomNode(animalTree.root);
+
+
             randword = randword.ToUpper();
             dashdoword = produceDashes(randword);
-            MessageBox.Show(dashdoword);
+            //MessageBox.Show(dashdoword);
             GamePage gamepage = new GamePage(dashdoword,randword);
             gamepage.Show();
         }

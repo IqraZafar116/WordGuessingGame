@@ -50,7 +50,7 @@ namespace WordGuessingGame
         private void GamePage_Load(object sender, EventArgs e)
         {
             label1.Text = dashdoword;
-            MessageBox.Show(randword);
+            //MessageBox.Show(randword);
         }
 
         private void button2_Click(object sender, EventArgs e)
