@@ -68,7 +68,8 @@ namespace WordGuessingGame
 
             if(randword==dashdoword)
             {
-                MessageBox.Show("you win");
+                GamePage3 gamepage = new GamePage3();
+                gamepage.Show();
                 this.Close();
             }
         }

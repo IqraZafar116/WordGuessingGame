@@ -16,5 +16,16 @@ namespace WordGuessingGame
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GamePage gamepage = new GamePage();
+            gamepage.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
