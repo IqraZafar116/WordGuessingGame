@@ -61,11 +61,16 @@ namespace WordGuessingGame
 
         private void button_click(object sender, EventArgs e)
         {
+            string preWordDashed = dashdoword;
             Button button = (Button)sender;
             userInputList.Add(Convert.ToChar(button.Text.ToUpper()));
             updateRandWord();
+            string AfterWordDashed = dashdoword;
             label1.Text = dashdoword;
-
+            if (preWordDashed != AfterWordDashed)
+                button.BackColor = Color.Green;
+            else
+                button.BackColor = Color.Red;
             if(randword==dashdoword)
             {
                 GamePage3 gamepage = new GamePage3();
