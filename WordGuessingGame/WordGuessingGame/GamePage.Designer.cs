@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GamePage));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_a = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -58,6 +60,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -394,6 +397,16 @@
             this.textBox1.TabIndex = 94;
             this.textBox1.Text = "Score : 00";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "2-01.png");
+            this.imageList1.Images.SetKeyName(1, "3-01.png");
+            this.imageList1.Images.SetKeyName(2, "4-01.png");
+            this.imageList1.Images.SetKeyName(3, "5-01.png");
+            this.imageList1.Images.SetKeyName(4, "6-01.png");
+            // 
             // GamePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,6 +485,6 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
-
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

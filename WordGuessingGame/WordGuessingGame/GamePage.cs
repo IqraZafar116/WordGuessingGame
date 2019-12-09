@@ -15,9 +15,11 @@ namespace WordGuessingGame
         private string dashdoword;
         private string randword;
         List<char> userInputList = new List<char>();
+        private int counter = 0;
         void updateRandWord()
         {
-            foreach(char x in userInputList)
+
+            foreach (char x in userInputList)
             {
                 char[] dashArray = dashdoword.ToCharArray();
                 for (int i = 0; i < randword.Length; i++)
@@ -49,6 +51,7 @@ namespace WordGuessingGame
 
         private void GamePage_Load(object sender, EventArgs e)
         {
+            pictureBox1.Image = imageList1.Images[0];
             label1.Text = dashdoword;
             //MessageBox.Show(randword);
         }
@@ -70,8 +73,22 @@ namespace WordGuessingGame
             if (preWordDashed != AfterWordDashed)
                 button.BackColor = Color.Green;
             else
+            {
                 button.BackColor = Color.Red;
-            if(randword==dashdoword)
+                counter = counter + 1;
+                if (counter < imageList1.Images.Count)
+                {
+                    pictureBox1.Image = imageList1.Images[counter];
+                }
+                else
+                {
+                    MessageBox.Show(randword);
+                    GamePage4 losePage = new GamePage4();
+                    losePage.Show();
+                    this.Close();
+                }
+            }
+            if (counter == imageList1.Images.Count)
             {
                 GamePage3 gamepage = new GamePage3();
                 gamepage.Show();

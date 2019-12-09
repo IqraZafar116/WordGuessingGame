@@ -134,6 +134,7 @@
             this.Controls.Add(this.button28);
             this.Name = "GamePage3";
             this.Text = "GamePage3";
+            this.Load += new System.EventHandler(this.GamePage3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

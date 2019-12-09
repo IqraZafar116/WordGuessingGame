@@ -16,5 +16,22 @@ namespace WordGuessingGame
         {
             InitializeComponent();
         }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            HomePage home = new HomePage();
+            home.Show();
+        }
+
+        private void GamePage4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button22_Click_1(object sender, EventArgs e)
+        {
+            HomePage my = new HomePage();
+            my.Show();
+        }
     }
 }

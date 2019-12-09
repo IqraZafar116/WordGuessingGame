@@ -27,5 +27,10 @@ namespace WordGuessingGame
         {
             this.Close();
         }
+
+        private void GamePage3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

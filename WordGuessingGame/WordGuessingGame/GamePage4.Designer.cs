@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button28 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button22 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -44,41 +45,36 @@
             this.textBox1.TabIndex = 126;
             this.textBox1.Text = "Score : 30";
             // 
-            // button28
-            // 
-            this.button28.BackColor = System.Drawing.Color.White;
-            this.button28.BackgroundImage = global::WordGuessingGame.Properties.Resources.home_png_icon_11;
-            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button28.Font = new System.Drawing.Font("Lucida Handwriting", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button28.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button28.Location = new System.Drawing.Point(120, 41);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(30, 30);
-            this.button28.TabIndex = 125;
-            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button28.UseVisualStyleBackColor = false;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.Red;
-            this.richTextBox1.Font = new System.Drawing.Font("Modern No. 20", 15.65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(120, 124);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(203, 105);
-            this.richTextBox1.TabIndex = 123;
-            this.richTextBox1.Text = "                             You Lose!";
-            // 
             // button22
             // 
             this.button22.BackColor = System.Drawing.SystemColors.Control;
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(190, 260);
+            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Location = new System.Drawing.Point(205, 423);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 32);
+            this.button22.Size = new System.Drawing.Size(106, 56);
             this.button22.TabIndex = 127;
             this.button22.Text = "Play Again";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click_1);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(24, 67);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(432, 341);
+            this.panel1.TabIndex = 128;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(72, 136);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(241, 55);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "You Lose!";
             // 
             // GamePage4
             // 
@@ -86,12 +82,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(477, 517);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button28);
-            this.Controls.Add(this.richTextBox1);
             this.Name = "GamePage4";
             this.Text = "GamePage4";
+            this.Load += new System.EventHandler(this.GamePage4_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,8 +98,8 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }

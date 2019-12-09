@@ -13,18 +13,18 @@ namespace WordGuessingGame
 {
     public partial class HomePage : Form
     {
-        BinaryTree FruitsTree = new BinaryTree();
-        BinaryTree VegetableTree = new BinaryTree();
-        BinaryTree animalTree = new BinaryTree();
-        BinaryTree birdTree = new BinaryTree();
-        BinaryTree elementsTree = new BinaryTree();
-        string randword = "";
-        string dashdoword = "";
+        public BinaryTree FruitsTree = new BinaryTree();
+        public BinaryTree VegetableTree = new BinaryTree();
+        public BinaryTree animalTree = new BinaryTree();
+        public BinaryTree birdTree = new BinaryTree();
+        public BinaryTree elementsTree = new BinaryTree();
+        public string randword = "";
+        public string dashdoword = "";
         public HomePage()
         {
             InitializeComponent();
         }
-        private void loadDic(BinaryTree tree,string filename)
+        private void loadDic(BinaryTree tree, string filename)
         {
             string[] readText = File.ReadAllLines(filename);
             foreach (string x in readText)
@@ -42,8 +42,8 @@ namespace WordGuessingGame
         }
         private string produceDashes(string word)
         {
-            string temp= "";
-            foreach(char x in word)
+            string temp = "";
+            foreach (char x in word)
             {
                 temp = temp + "_";
             }
@@ -57,7 +57,7 @@ namespace WordGuessingGame
             loadDic(animalTree, "Birds.txt");
             loadDic(birdTree, "Animals.txt");
             loadDic(elementsTree, "elements.txt");
-            
+
 
         }
 
@@ -99,7 +99,7 @@ namespace WordGuessingGame
             randword = randword.ToUpper();
             dashdoword = produceDashes(randword);
             //MessageBox.Show(dashdoword);
-            GamePage gamepage = new GamePage(dashdoword,randword);
+            GamePage gamepage = new GamePage(dashdoword, randword);
             gamepage.Show();
         }
 
